@@ -1,22 +1,21 @@
 import java.util.Scanner;
 
 public class TriangleHypotunes {
-    public static void main(String[] args) {
-        double x;
-        double y;
-        double z;
+    public static void main(String[] args){
+        double h;
+        double b;
+        double hy;
+        Scanner scanner = new Scanner(System.in);
 
-        Scanner scanner =new Scanner(System.in);
+        System.out.println("Enter the Height: ");
+        h=scanner.nextDouble();
 
-        System.out.println("Enter The value of X: ");
-        x = scanner.nextDouble();
+        System.out.println("Enter the Base: ");
+        b=scanner.nextDouble();
 
-        System.out.println("Enter The value of Y: ");
-        y = scanner.nextDouble();
-        z = Math.sqrt((x*x)+(y*y));
-        
-        System.out.println("The hypotunes of the triangle is: " +z);
+        hy =Math.sqrt((h*h) + (b*b));
+
+        System.out.println("The hypotunes side is:  " +hy);
         scanner.close();
     }
-    
 }
