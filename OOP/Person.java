@@ -15,7 +15,10 @@ public class Person{
     }
     // method to greet a user
     public void speak(){
-        System.out.println("A person speaks");
+        int age = 25;
+        String name = "John";
+        System.out.printf("Hello, %s! You are %d years old.\n", name, age);
+
     }
 
     public void greet(){
@@ -25,7 +28,7 @@ public class Person{
         name = scanner.nextLine();
         System.out.print("Enter your Age: ");
         age = scanner.nextInt();
-        System.out.println("Hello, your name is: "+name +" and you are: "+ age+"Years old");
+        System.out.printf("Hello, your name is %s and you are %d\n",name,age);
         scanner.close();
     }
     //Main Method
