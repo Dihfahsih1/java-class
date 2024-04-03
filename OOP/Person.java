@@ -7,12 +7,25 @@ public class Person{
     private String name;
     private int age;
 
-    //constructor
-    public Person(String name, int age){
-        //setting the parameters passed to the class fields
-       this.name = name;
-       this.age = age;
+    //constructors
+
+    public Person(){
+        age=100;
     }
+    public Person(String n1){
+        this.name=n1;
+    }
+
+    public Person(int i){
+        this.age=i;
+    }
+    public Person(String n, int a){
+        //setting the parameters passed to the class fields
+       this.name = n;
+       this.age = a;
+    }
+
+
     // method to greet a user
     public void speak(){
         int age = 25;
@@ -24,18 +37,23 @@ public class Person{
     public void greet(){
         
         //Prompt the user fo the input
-        System.out.print("Enter your Name: ");
-        name = scanner.nextLine();
+        
         System.out.print("Enter your Age: ");
         age = scanner.nextInt();
+
+        System.out.print("Enter your Name: ");
+        name = scanner.nextLine();
         System.out.printf("Hello, your name is %s and you are %d\n",name,age);
         scanner.close();
     }
     //Main Method
     public static void main(String[] args){
-        Person person = new Person("",0);
-        person.greet(); //call the greet method to input name and age
-        person.speak();
+        Person personempty = new Person();
+        System.out.println("Set age in the constructor:"+ personempty.age);
+        Person personage = new Person(30);
+
+        personage.greet(); //call the greet method to input name and age
+        personage.speak();
     }
 }
 
