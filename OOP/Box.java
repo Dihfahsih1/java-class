@@ -27,7 +27,7 @@ public class Box{
     }
 
     public double calculatePerimeter(){
-        return 4*(length + width+ height);
+        return 4*(length + width + height);
     }
     public static void main(String[] args){
         //Creating instances of a box or objects from a box class
