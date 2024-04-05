@@ -25,7 +25,6 @@ public class Person{
        this.age = a;
     }
 
-
     // method to greet a user
     public void speak(){
         int age = 25;
