@@ -1,0 +1,8 @@
+Arrays in java are used to store multiple values of the same type
+ under a single variable name.
+
+ They have a fixed size(Once you define a size of an array, you can not change it)
+
+ You can access elements from an array using index starts at 0
+
+ 
