@@ -19,3 +19,28 @@
 - Understand use of static methods and member variables
 - Arrays, one dimension arrays and multi demensional arrays
 - Array Lists
+
+### Projects
+#### Rajvir
+- Restaurant Menu
+- Stationery Shop
+- Banking System
+- Time Reader
+
+#### Izyan
+- Math Quiz
+
+#### Charmi
+- GUI To do List
+- Student Register
+- Foreign Exchange
+
+#### June
+- Advanced Calculator
+- ATM Application
+
+#### Samson
+-
+
+
+#### Joel

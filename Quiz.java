@@ -1,22 +1,16 @@
 import java.util.Scanner;
 
-public class Quiz {
-   
+public class Quiz{
+
     public static void main(String[] args){
 
-        Scanner input = new Scanner(System.in);
+        Scanner inputdata = new Scanner(System.in);
 
-        System.out.print("Enter the first number: ");
-        int num1 = input.nextInt();
+        System.out.print("Enter your name please: ");
+        String name = inputdata.nextLine();
 
-        System.out.print("Enter the secind number: ");
-        int num2 = input.nextInt();
+        System.out.println(name);
 
-        int add = num1+num2;
-
-        System.out.printf("The result is %d: " ,add);
-
-        input.close();
+        inputdata.close();
     }
-
 }
