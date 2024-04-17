@@ -1,26 +1,49 @@
-interface MyInterface{
-    int DEFAULT_VALUE=10;
-    void doSomething();
-    int calculate(int a, int b);
+import java.util.Scanner;
+
+interface vehicle{
+    String TYPE ="Four-Wheeler";
+    String start();
+    String stop();
+    String getModel();
 }
 
-class MyClass implements MyInterface {
-    @Override
-    public void doSomething(){
-        System.out.println("Doing something");
+class Car implements vehicle{
+    private String model;
+    String TYPE="Motor-bike";
+    
+    Car(String m){
+        this.model=m;
+
     }
+
     @Override
-    public int calculate(int a, int b){
-        return a+b;
+    public String start(){
+        return "Starting the car"+model;
+    }
+
+    @Override
+    public String stop(){
+        return "Stoping the car"+model;
+    }
+
+    @Override
+    public String getModel(){
+        return model;
     }
 }
 
 public class Main{
-    public static void main(String[] args) {
-       MyClass obj = new MyClass();
-       obj.doSomething();
-       int result = obj.calculate(5,6);
-       System.out.println("Addition Result: "+result);
-       System.out.println("Default value: "+MyInterface.DEFAULT_VALUE);
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please Enter the Car Model");
+        String carModel = scanner.nextLine();
+
+        Car myCar = new Car(carModel);
+        System.out.println("Car Model: "+myCar.getModel());
+        System.out.println("Car Model: "+myCar.start());
+        System.out.println("Car Model: "+myCar.stop());        
+        System.out.println("Vehicle Type: "+vehicle.TYPE);
+        scanner.close();
+
     }
 }
